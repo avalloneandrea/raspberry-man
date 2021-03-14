@@ -1,6 +1,6 @@
-## aMule
+### aMule
 
-### Installazione
+#### Installazione
 
 Installa aMule:
 ```
@@ -8,7 +8,7 @@ sudo apt update
 sudo apt install amule-daemon
 ```
 
-### Configurazione
+#### Configurazione
 
 Apri il file di configurazione di aMule:
 ```
@@ -56,7 +56,7 @@ sudo systemctl enable amule
 sudo systemctl start amule
 ```
 
-### Utilizzo
+#### Utilizzo
 
 Avvia un browser, inserisci il seguente URL:
 ```

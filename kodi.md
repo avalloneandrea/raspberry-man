@@ -1,6 +1,6 @@
-## Kodi
+### Kodi
 
-### Installazione
+#### Installazione
 
 Installa Kodi:
 ```
@@ -8,7 +8,7 @@ sudo apt update
 sudo apt install kodi
 ```
 
-### Configurazione
+#### Configurazione
 
 Apri il file di configurazione del Raspberry:
 ```
@@ -46,6 +46,6 @@ sudo systemctl enable kodi
 sudo systemctl start kodi
 ```
 
-### Utilizzo
+#### Utilizzo
 
 Collega un televisore al Raspberry e sintonizzalo sull'uscita HDMI.

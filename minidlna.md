@@ -1,6 +1,6 @@
-## MiniDLNA
+### MiniDLNA
 
-### Installazione
+#### Installazione
 
 Installa MiniDLNA:
 ```
@@ -8,7 +8,7 @@ sudo apt update
 sudo apt install minidlna
 ```
 
-### Configurazione
+#### Configurazione
 
 Apri il file di configurazione di MiniDLNA:
 ```
@@ -30,7 +30,7 @@ e applica le seguenti impostazioni:
 fs.inotify.max_user_watches=100000
 ```
 
-### Utilizzo
+#### Utilizzo
 
 Avvia un browser e inserisci il seguente URL:
 ```

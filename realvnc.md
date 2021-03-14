@@ -1,6 +1,6 @@
-## RealVNC
+### RealVNC
 
-### Installazione
+#### Installazione
 
 Installa RealVNC:
 ```
@@ -8,7 +8,7 @@ sudo apt update
 sudo apt install realvnc-vnc-server
 ```
 
-### Configurazione
+#### Configurazione
 
 Apri il file di configurazione di RealVNC:
 ```
@@ -27,7 +27,7 @@ sudo systemctl enable vncserver-x11-serviced.service
 sudo systemctl start vncserver-x11-serviced.service
 ```
 
-### Utilizzo
+#### Utilizzo
 
 Avvia un browser, inserisci il seguente URL:
 ```

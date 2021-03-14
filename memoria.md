@@ -1,4 +1,4 @@
-## Dispositivi di memoria
+### Dispositivi di memoria
 
 Raspbian monta automaticamente le partizioni ext quando colleghi un dispositivo di memoria al Raspberry, ma è possibile configurarlo affinché monti  manualmente le partizioni formattate con file system differenti.
 Puoi conoscere i dispositivi di memoria collegati digitando:

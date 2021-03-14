@@ -1,6 +1,6 @@
-## Deluge
+### Deluge
 
-### Installazione
+#### Installazione
 
 Installa Deluge:
 ```
@@ -8,7 +8,7 @@ sudo apt update
 sudo apt install deluged deluge-web deluge-console
 ```
 
-### Configurazione
+#### Configurazione
 
 Apri la console di configurazione di Deluge:
 ```
@@ -89,7 +89,7 @@ sudo systemctl enable delugeweb
 sudo systemctl start delugeweb
 ```
 
-### Utilizzo
+#### Utilizzo
 
 Avvia un browser, inserisci il seguente URL:
 ```

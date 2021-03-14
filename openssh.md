@@ -1,10 +1,10 @@
-## OpenSSH
+### OpenSSH
 
-### Installazione
+#### Installazione
 
 OpenSSH è già installato in Raspbian.
 
-### Configurazione
+#### Configurazione
 
 Imposta l'avvio automatico di OpenSSH:
 ```
@@ -12,7 +12,7 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 ```
 
-### Utilizzo
+#### Utilizzo
 
 Avvia un browser, inserisci il seguente URL:
 ```

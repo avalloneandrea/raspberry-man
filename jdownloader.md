@@ -1,6 +1,6 @@
-## JDownloader
+### JDownloader
 
-### Installazione
+#### Installazione
 
 Attiva un nuovo account MyJDownloader al seguente URL:
 ```
@@ -23,7 +23,7 @@ Email: <EMAIL>
 Password: <PASSWORD>
 ```
 
-### Configurazione
+#### Configurazione
 
 Apri il file di configurazione di JDownloader:
 ```
@@ -63,7 +63,7 @@ sudo systemctl enable jdownloader
 sudo systemctl start jdownloader
 ```
 
-### Utilizzo
+#### Utilizzo
 
 Avvia un browser, inserisci il seguente URL:
 ```

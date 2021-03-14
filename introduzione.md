@@ -1,4 +1,4 @@
-## Introduzione
+### Introduzione
 
 Scarica Raspberry Pi Imager, avvialo, e seleziona una immagine di Raspbian, una scheda SD di almeno 8 GB, e il pulsante _Write_.
 Al termine, crea il file `ssh` nella partizione `boot`, senza estensione e senza contenuto.

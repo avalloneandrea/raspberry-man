@@ -1,4 +1,4 @@
-## Interfacce di rete
+### Interfacce di rete
 
 Raspbian utilizza un server DHCP per ottenere un indirizzo IP dinamico ad ogni avvio, ma è possibile configurare un indirizzo IP statico se accedi spesso da remoto.
 Puoi conoscere l'indirizzo attuale digitando:

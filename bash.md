@@ -1,4 +1,4 @@
-## Bash
+### Bash
 
 Apri il file di configurazione di Bash:
 ```

@@ -1,13 +1,13 @@
-## FlexGet
+### FlexGet
 
-### Installazione
+#### Installazione
 
 Installa FlexGet:
 ```
 sudo pip install flexget deluge-client subliminal
 ```
 
-### Configurazione
+#### Configurazione
 
 Configura l'interfaccia web di FlexGet:
 ```
@@ -44,7 +44,7 @@ sudo systemctl enable flexget
 sudo systemctl start flexget
 ```
 
-### Utilizzo
+#### Utilizzo
 
 Avvia un browser, inserisci il seguente URL:
 ```
