@@ -14,7 +14,7 @@
 
 {% include_relative jdownloader.md %}
 
-{% include_relative flexGet.md %}
+{% include_relative flexget.md %}
 
 {% include_relative minidlna.md %}
 
