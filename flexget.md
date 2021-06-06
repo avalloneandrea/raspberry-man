@@ -32,9 +32,9 @@ User=pi
 Group=pi
 UMask=000
 Type=simple
-ExecStart=/usr/local/bin/flexget daemon start --autoreload-config
-ExecStop=/usr/local/bin/flexget daemon stop
-ExecReload=/usr/local/bin/flexget daemon reload
+ExecStart=/home/pi/.local/bin/flexget daemon start --autoreload-config
+ExecStop=/home/pi/.local/bin/flexget daemon stop
+ExecReload=/home/pi/.local/bin/flexget daemon reload
 Restart=on-failure
 
 [Install]
