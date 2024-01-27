@@ -1,18 +1,15 @@
 ### aMule
 
-#### Installazione
-
+Per accedere alla rete ed2k da Raspberry Pi hai bisogno di un client ed2k.
 Installa aMule:
 ```
 sudo apt update
 sudo apt install amule-daemon
 ```
 
-#### Configurazione
-
 Apri il file di configurazione di aMule:
 ```
-amuled -f
+amuled -f && sudo killall amuled 
 curl http://upd.emule-security.org/nodes.dat -o ~/.aMule/nodes.dat
 curl http://upd.emule-security.org/server.met -o ~/.aMule/server.met
 nano ~/.aMule/amule.conf
@@ -23,23 +20,23 @@ e applica le seguenti impostazioni:
 [eMule]
 MaxUpload=0
 MaxDownload=0
-TempDir=/media/hdd/Temp
-IncomingDir=/media/hdd/Incoming
+TempDir=/mnt/hdd/Temp
+IncomingDir=/mnt/hdd/Incoming
 [ExternalConnect]
 AcceptExternalConnections=1
 ECAddress=127.0.0.1
-ECPassword=b89749505e144b564adfe3ea8fc394aa
+ECPassword=ef7628c92bff39c0b3532d36a617cf09
 [WebServer]
 Enabled=1
-Password=b89749505e144b564adfe3ea8fc394aa
+Password=ef7628c92bff39c0b3532d36a617cf09
 ```
 
 Imposta l'avvio automatico di aMule:
 ```
-sudo tee /etc/systemd/system/amule.service<<EOF
+sudo tee /etc/systemd/system/amule.service << EOF
 [Unit]
 Description=aMule
-After=network-online.target media-hdd.mount
+After=network-online.target mnt-hdd.mount
 
 [Service]
 User=pi
@@ -53,17 +50,11 @@ Restart=on-failure
 WantedBy=multi-user.target
 EOF
 sudo systemctl enable amule
-sudo systemctl start amule
 ```
 
-#### Utilizzo
-
-Avvia un browser, inserisci il seguente URL:
+Per utilizzare aMule avvia un browser, inserisci il seguente URL:
 ```
-http://<IP>:4711
+http://192.168.1.141:4711
 ```
 
-e autenticati utilizzando le credenziali di default:
-```
-Password: raspberry
-```
+e autenticati utilizzando la password di default `amule`.
