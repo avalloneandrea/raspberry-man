@@ -1,13 +1,6 @@
 ### JDownloader
 
-#### Installazione
-
-Attiva un nuovo account MyJDownloader al seguente URL:
-```
-https://my.jdownloader.org
-```
-
-Installa JDownloader:
+Puoi gestire il download di file multimediali da Raspberry Pi installando JDownloader:
 ```
 sudo apt update
 sudo apt install openjdk-8-jre-headless
@@ -16,14 +9,13 @@ curl http://installer.jdownloader.org/JDownloader.jar -o ~/.jdownloader/JDownloa
 java -jar ~/.jdownloader/JDownloader.jar -norestart
 ```
 
-e inserisci le credenziali dell'account appena attivato:
+Imposta l'account MyJDownloader:
 ```
 java -jar ~/.jdownloader/JDownloader.jar -norestart
 Email: <EMAIL>
 Password: <PASSWORD>
+CTRL+C
 ```
-
-#### Configurazione
 
 Apri il file di configurazione di JDownloader:
 ```
@@ -32,20 +24,19 @@ nano ~/.jdownloader/cfg/org.jdownloader.settings.GeneralSettings.json
 
 e applica le seguenti impostazioni:
 ```
-"defaultdownloadfolder" : "/media/hdd",
-"downloadspeedlimitenabled" : true,
-"downloadspeedlimit" : 0,
+"defaultdownloadfolder" : "/mnt/hdd",
+"downloadspeedlimitenabled" : false,
 "autostartdownloadoption" : "ALWAYS",
 "cleanupafterdownloadaction" : "CLEANUP_ONCE_AT_STARTUP",
 "iffileexistsaction" : "SKIP_FILE",
 ```
 
-Imposta l'avvio automatico di JDownloader:
+Imposta l'avvio automatico:
 ```
-sudo tee /etc/systemd/system/jdownloader.service<<EOF
+sudo tee /etc/systemd/system/jdownloader.service << EOF
 [Unit]
 Description=JDownloader
-After=network-online.target media-hdd.mount
+After=network-online.target mnt-hdd.mount
 
 [Service]
 User=pi
@@ -63,8 +54,6 @@ sudo systemctl enable jdownloader
 sudo systemctl start jdownloader
 ```
 
-#### Utilizzo
-
 Avvia un browser, inserisci il seguente URL:
 ```
 https://my.jdownloader.org
@@ -76,8 +65,4 @@ Email: <EMAIL>
 Password: <PASSWORD>
 ```
 
-Premi il pulsante \texttt{Settings}, seleziona la voce \texttt{Extension Manager} e applica le seguenti impostazioni:
-```
-Folder Watch: Install
-Folder Watch: Enable
-```
+Premi il pulsante `Settings`, poi il pulsante `Extension Manager`, e infine il pulsante `Install` e il pulsante `Enable` alla voce `Folder Watch`.
