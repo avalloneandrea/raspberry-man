@@ -1,4 +1,4 @@
-### Backup
+## Backup
 
 Puoi effettuare una copia di backup del sistema operativo in esecuzione su un dispositivo di memoria esterna installando image-utils:
 ```

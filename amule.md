@@ -1,4 +1,4 @@
-### aMule
+## aMule
 
 Puoi accedere alla rete ed2k da Raspberry Pi installando aMule:
 ```

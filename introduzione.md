@@ -1,4 +1,4 @@
-### Introduzione
+## Introduzione
 
 Per usare Raspberry Pi hai bisogno di installare un sistema operativo.
 Di default, Raspberry Pi avvia il sistema operativo dalla scheda SD.

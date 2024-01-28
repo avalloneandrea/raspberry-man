@@ -1,4 +1,4 @@
-### FlexGet
+## FlexGet
 
 Puoi automatizzare la ricerca e il download di file multimediali da Raspberry Pi installando Flexget:
 ```

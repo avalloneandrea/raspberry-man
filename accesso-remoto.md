@@ -1,8 +1,8 @@
-### Accesso remoto
+## Accesso remoto
 
 Per accedere a Raspberry Pi da remoto hai bisogno di configurare una connessione di rete e uno o più protocolli di accesso.
 
-#### Connessione di rete
+### Connessione di rete
 
 Configura la connessione a una rete cablata:
 ```
@@ -30,7 +30,7 @@ e riavvia il sistema operativo per salvare le modifiche:
 sudo reboot
 ```
 
-#### Protocollo SSH
+### Protocollo SSH
 
 Puoi utilizzare il protocollo SSH per accedere da remoto al terminale di Raspberry Pi.
 Avvia `Raspberry Pi Configuration`, seleziona il tab `Interfaces`, poi lo switch `SSH` e infine il pulsante `OK`.
@@ -42,7 +42,7 @@ ssh://pi@192.168.1.141:22
 
 e autenticati utilizzando la password di default `raspberry`.
 
-#### Protocollo VNC
+### Protocollo VNC
 
 Puoi utilizzare il protocollo VNC per accedere da remoto al desktop di Raspberry Pi.
 Avvia `Raspberry Pi Configuration`, seleziona il tab `Interfaces`, poi lo switch `VNC` e infine il pulsante `OK`.

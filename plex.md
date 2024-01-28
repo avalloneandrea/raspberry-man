@@ -1,4 +1,4 @@
-### Plex
+## Plex
 
 Puoi organizzare e trasmettere i file multimediali da Raspberry Pi installando Plex:
 ```

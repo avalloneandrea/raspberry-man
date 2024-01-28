@@ -1,4 +1,4 @@
-### Deluge
+## Deluge
 
 Puoi accedere alla rete torrent da Raspberry Pi installando Deluge:
 ```
