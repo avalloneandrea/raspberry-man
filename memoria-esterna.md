@@ -1,4 +1,4 @@
-### Dispositivi di memoria esterna
+### Memoria esterna
 
 Per accedere ai dati contenuti in un dispositivo di memoria esterna da Raspberry Pi hai bisogno di montare il suo file system.
 
