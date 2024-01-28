@@ -59,10 +59,6 @@ Avvia un browser, inserisci il seguente URL:
 https://my.jdownloader.org
 ```
 
-e autenticati utilizzando le credenziali dell'account MyJDownloader:
-```
-Email: <EMAIL>
-Password: <PASSWORD>
-```
+e autenticati utilizzando le credenziali dell'account MyJDownloader.
 
 Premi il pulsante `Settings`, poi il pulsante `Extension Manager`, e infine il pulsante `Install` e il pulsante `Enable` alla voce `Folder Watch`.
