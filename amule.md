@@ -1,15 +1,15 @@
 ### aMule
 
-Per accedere alla rete ed2k da Raspberry Pi hai bisogno di un client ed2k.
-Installa aMule:
+Puoi accedere alla rete ed2k da Raspberry Pi installando aMule:
 ```
 sudo apt update
 sudo apt install amule-daemon
 ```
 
-Apri il file di configurazione di aMule:
+Apri il file di configurazione:
 ```
-amuled -f && sudo killall amuled 
+amuled -f
+sudo killall amuled 
 curl http://upd.emule-security.org/nodes.dat -o ~/.aMule/nodes.dat
 curl http://upd.emule-security.org/server.met -o ~/.aMule/server.met
 nano ~/.aMule/amule.conf
@@ -31,7 +31,7 @@ Enabled=1
 Password=ef7628c92bff39c0b3532d36a617cf09
 ```
 
-Imposta l'avvio automatico di aMule:
+Imposta l'avvio automatico:
 ```
 sudo tee /etc/systemd/system/amule.service << EOF
 [Unit]
@@ -50,9 +50,10 @@ Restart=on-failure
 WantedBy=multi-user.target
 EOF
 sudo systemctl enable amule
+sudo systemctl start amule
 ```
 
-Per utilizzare aMule avvia un browser, inserisci il seguente URL:
+Avvia un browser, inserisci il seguente URL:
 ```
 http://192.168.1.141:4711
 ```

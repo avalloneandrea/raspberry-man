@@ -1,13 +1,12 @@
 ### Deluge
 
-Per accedere alla rete torrent da Raspberry Pi hai bisogno di un client torrent.
-Installa Deluge:
+Puoi accedere alla rete torrent da Raspberry Pi installando Deluge:
 ```
 sudo apt update
 sudo apt install deluged deluge-web deluge-console
 ```
 
-Apri la console di configurazione di Deluge:
+Apri la console di configurazione:
 ```
 deluged
 deluge-console
@@ -26,9 +25,10 @@ config -s remove_seed_at_ratio true
 quit
 ```
 
-Apri il file di configurazione di Deluge Web:
+Apri il file di configurazione:
 ```
-deluge-web --fork && sudo killall deluge-web
+deluge-web
+CTRL+C
 nano ~/.config/deluge/web.conf
 ```
 
@@ -56,9 +56,10 @@ Restart=on-failure
 WantedBy=multi-user.target
 EOF
 sudo systemctl enable deluge
+sudo systemctl start deluge
 ```
 
-e l'avvio automatico di Deluge Web:
+Imposta l'avvio automatico di Deluge Web:
 ```
 sudo tee /etc/systemd/system/delugeweb.service << EOF
 [Unit]
@@ -77,9 +78,10 @@ Restart=on-failure
 WantedBy=multi-user.target
 EOF
 sudo systemctl enable delugeweb
+sudo systemctl start delugeweb
 ```
 
-Per utilizzare Deluge avvia un browser, inserisci il seguente URL:
+Avvia un browser, inserisci il seguente URL:
 ```
 http://192.168.1.141:8112
 ```

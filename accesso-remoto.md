@@ -16,7 +16,7 @@ EOF
 
 oppure configura la connessione a una rete senza fili:
 ```
-echo wpa_passphrase "<SSID>" "<PSK>" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+wpa_passphrase "<SSID>" "<PSK>" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 sudo tee -a /etc/dhcpcd.conf << EOF
 interface wlan0
 static ip_address=192.168.1.141/24

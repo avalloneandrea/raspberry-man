@@ -12,6 +12,8 @@
 
 {% include_relative flexget.md %}
 
+{% include_relative plex.md %}
+
 {% include_relative bash.md %}
 
 {% include_relative backup.md %}

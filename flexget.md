@@ -1,13 +1,11 @@
 ### FlexGet
 
-Puoi utilizzare un software di automazione per scaricare automaticamente tutti i tipi di file con i software installati su Raspberry Pi.
-
-Installa FlexGet:
+Puoi automatizzare la ricerca e il download di file multimediali da Raspberry Pi installando Flexget:
 ```
 sudo pip install flexget deluge-client
 ```
 
-Crea il file di configurazione di FlexGet:
+Crea il file di configurazione:
 ```
 mkdir -p ~/.flexget
 tee ~/.flexget/config.yml << EOF
@@ -18,7 +16,7 @@ EOF
 flexget web passwd notstrongenough
 ```
 
-Imposta l'avvio automatico di FlexGet:
+Imposta l'avvio automatico:
 ```
 sudo tee /etc/systemd/system/flexget.service << EOF
 [Unit]
@@ -39,9 +37,10 @@ Restart=on-failure
 WantedBy=multi-user.target
 EOF
 sudo systemctl enable flexget
+sudo systemctl start flexget
 ```
 
-Per utilizzare FlexGet avvia un browser, inserisci il seguente URL:
+Avvia un browser, inserisci il seguente URL:
 ```
 http://192.168.1.141:5050
 ```
