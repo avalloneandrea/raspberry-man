@@ -34,7 +34,7 @@ nano ~/.config/deluge/web.conf
 
 e applica le seguenti impostazioni:
 ```
-"default_daemon": "127.0.0.1:58846",
+"default_daemon": "localclient@127.0.0.1:58846",
 ```
 
 Imposta l'avvio automatico di Deluge:
