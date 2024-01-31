@@ -14,13 +14,14 @@ deluge-console
 
 e applica le seguenti impostazioni:
 ```
-config -s download_location /mnt/hdd
+config -s download_location /mnt/hdd/
 config -s max_download_speed -1.0
 config -s max_upload_speed -1.0
 config -s ignore_limits_on_local_network false
 config -s allow_remote true
 config -s dont_count_slow_torrents true
-config -s share_ratio_limit 2.0
+config -s stop_seed_at_ratio true
+config -s stop_seed_ratio 2.0
 config -s remove_seed_at_ratio true
 quit
 ```
