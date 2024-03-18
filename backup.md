@@ -19,7 +19,7 @@ sudo crontab -e
 
 e configura l'esecuzione di un backup incrementale:
 ```
-0 0 * * SAT /usr/local/sbin/image-backup /mnt/hdd/backup.img | logger
+0 0 * * SAT /usr/local/sbin/image-backup /mnt/hdd/backup.img
 ```
 
 Puoi ripristinare la copia di backup prodotta da image-utils utilizzando Raspberry Pi Imager.
