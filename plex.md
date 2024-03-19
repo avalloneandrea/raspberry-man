@@ -8,7 +8,16 @@ sudo apt update
 sudo apt install plexmediaserver
 ```
 
-Avvia un browser e inserisci il seguente URL:
+Avvia un browser, inserisci il seguente URL:
 ```
 http://192.168.1.141:32400/manage
+```
+
+e applica le seguenti impostazioni:
+```
+Libreria > Scansiona automaticamente la mia libreria
+Libreria > Esegui una scansione parziale quando vengono rilevati cambiamenti
+Libreria > Includi librerie musicali negli aggiornamenti automatici
+Libreria > Svuota automaticamente il cestino dopo ogni scansione
+Libreria > Permetti la cancellazione dei media
 ```
