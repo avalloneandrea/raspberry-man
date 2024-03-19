@@ -31,7 +31,7 @@ quit
 Apri il file di configurazione:
 ```
 deluge-web
-CTRL+C
+sudo killall deluge-web
 nano ~/.config/deluge/web.conf
 ```
 
