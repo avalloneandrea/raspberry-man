@@ -5,7 +5,7 @@ Puoi accedere alla rete torrent da Raspberry Pi installando Deluge:
 sudo apt update
 sudo apt install deluged deluge-web deluge-console
 sudo find /usr -path "*/deluge/ui/console/cmdline/commands/config.py" -exec sh -c 'curl https://github.com/deluge-torrent/deluge/commit/2f1c008a26b50ab3487bd03bcabb39347d441f23.patch | patch {}' \;
-sudo find /usr -path "*/deluge/core/" -exec sh -c "curl https://github.com/deluge-torrent/deluge/commit/8ff4683780921111f26fe051e0274aac8afe8bf3.patch | patch -f -F3 --no-backup-if-mismatch -d {}" \;
+sudo find /usr -path "*/deluge/core/" -exec sh -c "curl https://github.com/deluge-torrent/deluge/commit/8ff4683780921111f26fe051e0274aac8afe8bf3.patch | grep -v -e urllib -e flag | sed 's/6 +16,8/5 +16,7/' | sed 's/7 +711,7/4 +711,4/' | sed '/tests/d' | patch -F3 --no-backup-if-mismatch -d {}" \;
 ```
 
 Apri la console di configurazione:
