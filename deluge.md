@@ -26,18 +26,7 @@ config -s stop_seed_at_ratio true
 config -s stop_seed_ratio 2.0
 config -s remove_seed_at_ratio true
 quit
-```
-
-Apri il file di configurazione:
-```
-deluge-web
 sudo killall deluge-web
-nano ~/.config/deluge/web.conf
-```
-
-e applica le seguenti impostazioni:
-```
-"default_daemon": "localclient@127.0.0.1:58846",
 ```
 
 Imposta l'avvio automatico di Deluge:
