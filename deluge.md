@@ -26,7 +26,7 @@ config -s stop_seed_at_ratio true
 config -s stop_seed_ratio 2.0
 config -s remove_seed_at_ratio true
 quit
-sudo killall deluge-web
+sudo killall deluged
 ```
 
 Imposta l'avvio automatico di Deluge:
