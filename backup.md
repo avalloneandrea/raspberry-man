@@ -9,7 +9,7 @@ rm -r ~/.image-utils -f
 
 Effettua il backup iniziale:
 ```
-sudo image-backup --initial /mnt/hdd/backup.img
+sudo image-backup --initial /mnt/hdd/Backup/LATEST-raspios-bullseye.img
 ```
 
 Apri il file di configurazione di cron:
@@ -19,7 +19,9 @@ sudo crontab -e
 
 e configura l'esecuzione di un backup incrementale:
 ```
-0 0 * * SAT /usr/local/sbin/image-backup /mnt/hdd/backup.img
+0 0 * * SAT /usr/local/sbin/image-backup /mnt/hdd/Backup/LATEST-raspios-bullseye.img
+0 0 * * * /usr/bin/cp /home/pi/.flexget/config.yml /mnt/hdd/Backup
+0 0 * * * /usr/bin/cp /home/pi/.flexget/db-config.sqlite /mnt/hdd/Backup
 ```
 
 Puoi ripristinare la copia di backup prodotta da image-utils utilizzando Raspberry Pi Imager.
